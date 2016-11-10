@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qWz-Ax-Wjk">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="QsG-pO-ql8">
+            <objects>
+                <navigationController id="qWz-Ax-Wjk" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="WNp-nv-sG8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.36671164290000002" green="1" blue="0.4948442616" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="pdD-hH-6aB" kind="relationship" relationship="rootViewController" id="BIi-4t-vNw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zua-tY-IBY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-350" y="-89"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hHb-GW-ZZ5">
+            <objects>
+                <viewController id="pdD-hH-6aB" customClass="ViewController" customModule="PhotoBrowse" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mNK-vC-Rru"/>
+                        <viewControllerLayoutGuide type="bottom" id="bKl-PT-SIP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2zA-wu-fV1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hx-EE-jv6">
+                                <frame key="frameInset" minX="48" minY="120" width="129" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="浏览图片" image="photo6t.jpg"/>
+                                <connections>
+                                    <action selector="liulanAction:" destination="pdD-hH-6aB" eventType="touchUpInside" id="N55-BI-hmu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1h-Lq-wPa">
+                                <frame key="frameInset" minX="131" minY="436" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="secondAction:" destination="pdD-hH-6aB" eventType="touchUpInside" id="9m6-n5-Ugw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="p4n-D7-zwC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9No-4U-ciI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="488.80000000000001" y="-91.304347826086968"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="photo6t.jpg" width="133" height="200"/>
+    </resources>
+</document>
